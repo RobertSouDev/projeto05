@@ -116,3 +116,33 @@ img:hover{
     display: inline-flex;
     align-items: center;
 }
+
+header {
+    animation-name: topdown;
+    animation-duration: 1s ;
+}
+
+main {
+    animation: downtop 1s 350ms reverse backwards;
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes downtop {
+    100% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+}
